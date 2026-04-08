@@ -11,7 +11,6 @@ st.markdown("""
     <style>
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
-    header {visibility: hidden;}
     
     /* Estilo para las tarjetas de métricas */
     .metric-card {
@@ -56,7 +55,7 @@ with st.sidebar:
     st.divider()
     
     st.header("📈 Condiciones de Mercado")
-    euribor_porcentaje = st.number_input("Euribor actual (%)", value=3.5, step=0.1)
+    euribor_porcentaje = st.number_input("Euribor actual (%)", value=2.82, step=0.01)
     tipo_interes = st.radio("Tipo de interés", ["fijo", "variable"])
     # Bonificación interactiva y restrictiva
     aplicar_bono = st.checkbox("¿Aplicar bonificación por productos?")
